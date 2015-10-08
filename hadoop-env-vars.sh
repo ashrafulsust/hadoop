@@ -1,0 +1,10 @@
+export HADOOP_HOME=/home/hadoop/hadoop-home/
+export HADOOP_INSTALL=$HADOOP_HOME
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
+export HADOOP_COMMON_LIB_NATVE_DIR=$HADOOP_HOME/lib/native
+export HADOOP_CONF_DIR=/home/hadoop/hadoop-scripts/hadoop-conf
+export YARN_CONF_DIR=$HADOOP_CONF_DIR
+export PATH=$HADOOP_HOME/sbin:$HADOOP_HOME/bin:$PATH
