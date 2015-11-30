@@ -18,7 +18,7 @@ wget http://repo1.maven.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar
 wget http://repo1.maven.org/maven2/org/joda/joda-convert/1.2/joda-convert-1.2.jar
 wget https://repo1.maven.org/maven2/org/apache/thrift/libthrift/0.9.2/libthrift-0.9.2.jar
 wget http://repo1.maven.org/maven2/com/twitter/jsr166e/1.1.0/jsr166e-1.1.0.jar
-echo "sh spark-shell --driver-class-path \$(echo \$SPARK_HOME/*.jar |sed 's/ /:/g')" > bin/spark_shell
+echo "spark-shell --driver-class-path \$(echo \$SPARK_HOME/*.jar |sed 's/ /:/g')" > bin/spark_shell
 chmod u+x bin/spark_shell
 echo "Congratulation! Spark Setup completed successfully";
 echo "To Start Spark type sh spark_shell"
