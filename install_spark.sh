@@ -4,7 +4,7 @@ tar zxvf spark-1.5.0-bin-hadoop2.6.tgz
 rm -f spark-1.5.0-bin-hadoop2.6.tgz
 mv spark-1.5.0-bin-hadoop2.6 spark
 echo "export SPARK_HOME=~/spark" >> /etc/profile
-echo "export PATH=\$PATH:$SPARK_HOME/bin" >> /etc/profile
+echo "export PATH=\$PATH:\$SPARK_HOME/bin" >> /etc/profile
 echo "export SPARK_MASTER_IP=127.0.0.1" >> /etc/profile
 echo "export SPARK_LOCAL_IP=127.0.0.1" >> /etc/profile
 source /etc/profile
