@@ -3,11 +3,11 @@ wget http://archive.apache.org/dist/spark/spark-1.5.0/spark-1.5.0-bin-hadoop2.6.
 tar zxvf spark-1.5.0-bin-hadoop2.6.tgz
 rm -f spark-1.5.0-bin-hadoop2.6.tgz
 mv spark-1.5.0-bin-hadoop2.6 spark
-echo "export SPARK_HOME=~/spark" >> /etc/profile
-echo "export PATH=\$PATH:\$SPARK_HOME/bin" >> /etc/profile
-echo "export SPARK_MASTER_IP=127.0.0.1" >> /etc/profile
-echo "export SPARK_LOCAL_IP=127.0.0.1" >> /etc/profile
-source /etc/profile
+echo "export SPARK_HOME=~/spark" >> ~/.bashrc
+echo "export PATH=\$PATH:\$SPARK_HOME/bin" >> ~/.bashrc
+echo "export SPARK_MASTER_IP=127.0.0.1" >> ~/.bashrc
+echo "export SPARK_LOCAL_IP=127.0.0.1" >> ~/.bashrc
+source ~/.bashrc
 cd $SPARK_HOME
 wget http://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.10/1.5.0-M1/spark-cassandra-connector_2.10-1.5.0-M1.jar
 wget http://repo1.maven.org/maven2/org/apache/cassandra/cassandra-clientutil/2.1.5/cassandra-clientutil-2.1.5.jar
